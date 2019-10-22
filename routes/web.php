@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', 'kontrolerLogIn@login');
+Route::get('/login', 'kontrolerLogIn@login');
+Route::get('/register', 'kontrolerLogIn@register');
+
+Route::get('/home', 'kontrolerNavigasi@home');
+Route::get('/halaman1', 'kontrolerNavigasi@halaman1');
+Route::get('/halaman2', 'kontrolerNavigasi@halaman2');
+Route::get('/halaman3', 'kontrolerNavigasi@halaman3');
